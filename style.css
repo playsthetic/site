@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.inter-<uniquifier > {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: Inter;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(40, 42, 54);
+    scroll-snap-align: start;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.one {
+    background: rgb(189, 147, 249);
+}
+
+.two {
+    background: rgb(80, 250, 123);
+}
+
+.three {
+    background: rgb(255, 121, 198);
+}
+
+.four {
+    background: rgb(241, 250, 140);
+}
+
+/* Add this CSS */
+.scroll-nav {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll-nav a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    text-indent: -9999px;
+}
